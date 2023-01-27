@@ -6,41 +6,71 @@ import security from '../../assets/FeaturePage/security.svg'
 import search from '../../assets/FeaturePage/searching.svg'
 import malware from '../../assets/FeaturePage/malware.svg'
 
+
+const cardsData = [
+  {
+    image:cloud,
+    heading:"Improving Opportunity",
+    subText:"makes it possible"
+  },
+  {
+    image:security,
+    heading:"Increasing Employability",
+    subText:"gain practical skills"
+  },
+  {
+    image:malware,
+    heading:"Transforming Education",
+    subText:"fostering the development"
+  },
+  {
+    image:search,
+    heading:"Investing in Innovation",
+    subText:"support creative ideas"
+  },
+  
+]
+
+
 const FeaturePage = () => {
   return (
-    <div className='content-wrapper'>
-        <div className='hero-div'>
-            <div className='side-wrapper'>
-                <h1 className='hero-content'>Gain Skills When & Where You Want For Your Study or Career...</h1>
-                <button className='hero-button'>
-                  <span>Explore Gigs</span>
-                </button>
+    <>
+      <div className='container-fluid' style={{backgroundColor:"#ff7c2e"}}>
+        <div className='row d-flex justify-content-center align-items-center p-4'>
+          <div className='col-lg-4 col-sm-12'>
+            <div className='display-3 text-light mb-4'>
+              <strong>
+                Gain Skills When & Where You Want For Your Study or Career...
+              </strong>
             </div>
-            <img className='illustration-svg' src={illustration} alt='illustration'/>
+            <div className='btn btn-light text-primary px-4 py-2 rounded opacity-50 hero-button'>
+              <h4>
+                Explore Gigs<span className='arrow'> »</span>
+              </h4>
+            </div>
+          </div>
+          <div className='col-lg-8 col-sm-12 d-flex justify-content-center align-items-center'>
+            <img  src={illustration}/>
+
+          </div>
         </div>
-        <div className='sub-card'>
-            <div className='subcard'>
-              <img className='cloud-svg' src={cloud} alt='' />
-              <h2>Improving Opportunity</h2>
-              <h5>makes it possible</h5>
+      </div>
+      <div className='container'>
+        <div className='row d-flex justify-content-around' style={{transform:"translateY(-50px)"}}>
+        {cardsData.map((data, idx) => {
+          return(
+            <div className='col-sm-6 col-md-3 p-2 subcard' key={idx}>
+            <div className='bg-white shadow h-100 rounded p-4'>
+              <img className='icon-svg' src={data.image} alt='' />
+              <h2>{data.heading}</h2>
+              <h5>{data.subText}</h5>
             </div>
-            <div className='subcard'>
-              <img className='security-svg' src={security} alt='' />
-              <h2>Increasing Employability</h2>
-              <h5>gain practical skills</h5>
-            </div>
-            <div className='subcard'>
-              <img className='search-svg' src={search} alt='' />
-              <h2>Transforming Education</h2>
-              <h5>fostering the development</h5>
-            </div>
-            <div className='subcard'>
-              <img className='malware-svg' src={malware} alt='' />
-              <h2>Investing in Innovation</h2>
-              <h5>support creative ideas</h5>
-            </div>
+          </div>
+          )
+        })}
         </div>
-    </div>
+      </div>
+    </>
   )
 }
 
