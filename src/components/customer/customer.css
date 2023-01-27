@@ -1,7 +1,7 @@
 
 
 /* left-side */
-.box{
+.boxx{
 display: flex;
     /* grid-template-columns: auto auto auto; */
     /* justify-content: space-around; */
@@ -12,26 +12,26 @@ background-color: white;
 padding: 30px;
 }
 
-.column  {
+.columnn  {
  
     width: 50%;
     padding: 10px;
     height: auto;
   }
 
-  .two-col{
+  .two-coll{
     background-color:white;
     display: flex;
    gap: 10px;
   }
 
-img {
+.imagee {
     height: auto;
     max-width: 100%;
     vertical-align: middle;
     width: 250px;
 }
-.card-inner{ 
+.card-innerr{ 
     border-radius: 20px;
     border: solid 0.1px gray ;
     height: auto;
@@ -42,7 +42,7 @@ margin: 20px;
 color: #194866;
 
 }
-.second{
+.secondd{
     display: flex;
     gap: 10px;
 }
@@ -51,23 +51,23 @@ color: #194866;
 /* right-side*/
 
 
- .caption + h2:not(:last-child) {
+ .captionn + h2:not(:last-child) {
     margin-bottom: 50px;
 }
-.caption + h2 {
+.captionn + h2 {
     margin-top: 10px;
     font-size: 55px;
     color: #194866;
 
 }
- .first{
+ .firstt{
     padding-top: 200px;
  }
- .block-intro{
+ .block-introo{
     font-size: large;
     font-weight: 300;
  }
-.button-block{
+.button-blockk{
 margin-top: 70px;
     font-size: small;
     font-weight: 500;

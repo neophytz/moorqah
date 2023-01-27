@@ -1,0 +1,78 @@
+.second-page{
+    height: 550px;
+    margin: 80px 80px 80px 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .images{
+    height: 560px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rendered-div{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .display-img{
+    height: 560px;
+  }
+  
+  .card-btn-selected {
+    width: 572px;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgb(2, 0, 0);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+   }
+  
+   .card-btn-content{
+    font-family: 'Arial' , sans-serif;
+    padding-left: 10px
+   }
+  
+   .lead-content{
+    padding: 10px 0px 0px 10px;
+    font-size: 18px;
+   }
+  
+   .support-content{
+    padding: 10px 0px 0px 10px;
+    font-size: 14px;
+   }
+  
+   .link-btn{
+    background:rgba(0, 0, 0,0);
+    border: 0px;
+    font-size: 12px;
+    color: rgb(25, 0, 255);
+    padding: 10px 0px 0px 10px;
+   }
+  
+   .card-btn-icon{
+    height: 32px;
+    width: 45px;
+    border-radius: 10px 0px 0px 10px;
+   }
+  
+  .cart{
+    height: 16px;
+    transform: translateX(10px) translateY(8px);
+   }
+  
+   .arrow{
+    height: 20px;
+    transform: translateY(5px);
+   }
+  
+   .btn-div{
+    display: flex;
+    flex-direction: row;
+   }
