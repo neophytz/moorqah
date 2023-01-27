@@ -50,7 +50,7 @@ const FeaturePage = () => {
             </div>
           </div>
           <div className='col-lg-8 col-sm-12 d-flex justify-content-center align-items-center'>
-            <img  src={illustration}/>
+            <img src={illustration} alt="text"/>
 
           </div>
         </div>
