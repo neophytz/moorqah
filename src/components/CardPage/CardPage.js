@@ -7,38 +7,43 @@ import customer from "../../assets/CardPage/client-care.svg";
 import handshake from "../../assets/CardPage/handshake.svg";
 import magicwand from "../../assets/CardPage/magic-wand.svg";
 
+const cardsData = [
+	{
+		image: medicine,
+		heading: "Triage",
+		info: "nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam"
+	},
+	{
+		image: microscope,
+		heading: "Triage",
+		info: "nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam"
+	},
+	{
+		image: protection,
+		heading: "Triage",
+		info: "nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam"
+	}
+];
+
+
 const CardPage = () => {
 	return (
-		<div className="card-page">
+		<>
+		{/* <div className="card-page">
 			<div className="top-part">
 				<div className="info-cards-group">
-					<div className="info-cards">
-						<div className="circle"></div>
-						<img src={medicine} alt="medicine" className="medicine-img" />
-						<h1 className="headline-text">Traige</h1>
-						<p className="card-info">
-							nunc id cursus metus aliquam eleifend mi in nulla posuere
-							sollicitudin aliquam
-						</p>
-					</div>
-					<div className="info-cards">
-						<div className="circle"></div>
-						<img src={microscope} alt="microscope" className="microscope-img" />
-						<h1 className="headline-text">Traige</h1>
-						<p className="card-info">
-							nunc id cursus metus aliquam eleifend mi in nulla posuere
-							sollicitudin aliquam
-						</p>
-					</div>
-					<div className="info-cards">
-						<div className="circle"></div>
-						<img src={protection} alt="protection" className="protection-img" />
-						<h1 className="headline-text">Traige</h1>
-						<p className="card-info">
-							nunc id cursus metus aliquam eleifend mi in nulla posuere
-							sollicitudin aliquam
-						</p>
-					</div>
+						{cardsData.map((data, idx) => {
+						return (
+						<div className="info-cards" key={idx}>
+							<div className="circle"></div>
+							<img src={data.image} alt="medicine" className="medicine-img" />
+							<h1 className="headline-text">{data.heading}</h1>
+							<p className="card-info">
+								{data.info}
+							</p>
+						</div>
+						)
+					})}
 				</div>
 				<div className="side-content">
 					<h1 className="head-line"> How it helps people </h1>
@@ -55,8 +60,11 @@ const CardPage = () => {
 						<span>Get in Touch</span>
 					</button>
 				</div>
-			</div>
-			<div className="bottom-part">
+			</div> */}
+
+
+{/* 
+
 				<div className="bottom-card-left">
 					<div className="icon-holder">
 						<div className="card-circle"></div>
@@ -92,9 +100,30 @@ const CardPage = () => {
 							Help you measure your skill and help you solve problem faster{" "}
 						</p>
 					</div>
-				</div>
-			</div>
+				</div> */}
+			{/* </div> */}
+		{/* </div> */}
+		<div className="row">
+				{cardsData.map((data, idx) => {
+					return(
+						<div className="col-sm-12 col-md-4 rounded shadow bg-primary text-dark" key={idx}>
+							<div className="row p-4 text-light">
+								<div className="col-4 d-flex justify-content-center align-items-center">
+									<div style={{backgroundImage:`url(${data.image})`, borderRadius:"50%", height:'100px', width:'100px', backgroundRepeat:"no-repeat", backgroundSize:"contain"}} className="bg-light">
+									</div>
+								</div>
+								<div className="col-8">
+									<h1 className=""> {data.heading}</h1>
+									<p className="">
+										{data.info}
+									</p>
+								</div>
+							</div>
+						</div>
+					)
+				})}
 		</div>
+		</>
 	);
 };
 
