@@ -27,6 +27,7 @@ function App() {
     <LandingPage />
     <CardPage />
     <LandingPageBootstrap/>
+    
     </>
   );
 }
