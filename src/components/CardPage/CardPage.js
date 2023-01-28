@@ -25,104 +25,84 @@ const cardsData = [
 	}
 ];
 
+const bottomCardsData = [
+	{
+		image: customer,
+		heading: "Triage",
+		info: "nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam",
+		backgroundColor: "rgb(26, 109, 204)"
+	},
+	{
+		image: handshake,
+		heading: "Triage",
+		info: "nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam",
+		backgroundColor: "rgb(255, 124, 46)"
+	},
+	{
+		image: magicwand,
+		heading: "Triage",
+		info: "nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam",
+		backgroundColor: "rgb(255, 76, 58)"
+	}
+];
+
 
 const CardPage = () => {
 	return (
 		<>
-		{/* <div className="card-page">
-			<div className="top-part">
-				<div className="info-cards-group">
-						{cardsData.map((data, idx) => {
-						return (
-						<div className="info-cards" key={idx}>
-							<div className="circle"></div>
-							<img src={data.image} alt="medicine" className="medicine-img" />
-							<h1 className="headline-text">{data.heading}</h1>
-							<p className="card-info">
-								{data.info}
-							</p>
+			<div className="container my-5 px-0">
+				<div className="row">
+					<div className="col-md-7 d-flex order-md-1 order-2">
+						<div className="row">
+							{
+								cardsData.map((card, idx) => {
+									return (
+										<div key={idx} className="col-md-4 p-2">
+											<div className="shadow rounded px-5 py-3 d-flex flex-column justify-content-center align-items-center text-center">
+												<div className="h-100px bg-light" style={{ backgroundImage: `url(${card.image})` }} />
+												<div>
+													<h4 className="my-4"><strong>{card.heading}</strong></h4>
+													<p>{card.info}</p>
+												</div>
+											</div>
+										</div>
+									)
+								})
+							}
 						</div>
-						)
-					})}
-				</div>
-				<div className="side-content">
-					<h1 className="head-line"> How it helps people </h1>
-					<h5 className="sub-text">
-						{" "}
-						Lorem Ipsum is simply dummy text of the printing <br /> and
-						typesetting industry.{" "}
-					</h5>
-					<p className="info-text">
-						Enhance your preliminatry diagnosis and tiage with pediatric
-						content...
-					</p>
-					<button className="btn-more">
-						<span>Get in Touch</span>
-					</button>
-				</div>
-			</div> */}
-
-
-{/* 
-
-				<div className="bottom-card-left">
-					<div className="icon-holder">
-						<div className="card-circle"></div>
-						<img className="card-icon" src={customer} alt="customer" />
 					</div>
-					<div className="text-holder">
-						<h1 className="main-text"> Learning Skills</h1>
-						<p className="sub-content">
-							Help you measure your skill and help you solve problem faster{" "}
-						</p>
+					<div className="col-md-5 d-flex flex-column justify-content-around p-5 order-md-2 order-1">
+						<h1 className="text-primary" ><strong> How it helps people</strong> </h1>
+						<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+						<p>Enhance your preliminatry diagnosis and tiage with pediatric content...</p>
+						<div className="btn btn-outline-primary p-2 w-50">
+							Get in Touch
+						</div>
 					</div>
 				</div>
-				<div className="bottom-card-middle">
-					<div className="icon-holder">
-						<div className="card-circle"></div>
-						<img className="card-icon" src={handshake} alt="customer" />
-					</div>
-					<div className="text-holder">
-						<h1 className="main-text"> Learning Skills</h1>
-						<p className="sub-content">
-							Help you measure your skill and help you solve problem faster{" "}
-						</p>
-					</div>
-				</div>
-				<div className="bottom-card-right">
-					<div className="icon-holder">
-						<div className="card-circle"></div>
-						<img className="card-icon" src={magicwand} alt="customer" />
-					</div>
-					<div className="text-holder">
-						<h1 className="main-text"> Learning Skills</h1>
-						<p className="sub-content">
-							Help you measure your skill and help you solve problem faster{" "}
-						</p>
-					</div>
-				</div> */}
-			{/* </div> */}
-		{/* </div> */}
-		<div className="row">
-				{cardsData.map((data, idx) => {
-					return(
-						<div className="col-sm-12 col-md-4 rounded shadow bg-primary text-dark" key={idx}>
-							<div className="row p-4 text-light">
-								<div className="col-4 d-flex justify-content-center align-items-center">
-									<div style={{backgroundImage:`url(${data.image})`, borderRadius:"50%", height:'100px', width:'100px', backgroundRepeat:"no-repeat", backgroundSize:"contain"}} className="bg-light">
+			</div>
+			<div className="row p-4">
+				{bottomCardsData.map((data, idx) => {
+					return (
+						<div className="col-sm-12 col-md-4 p-2" key={idx}>
+							<div className="rounded shadow p-4 text-dark" style={{ backgroundColor: data.backgroundColor }}>
+								<div className="row p-4 text-light">
+									<div className="col-4 d-flex justify-content-center align-items-center">
+										<div className="h-100px bg-light" style={{ backgroundImage: `url(${data.image})` }} >
+										</div>
 									</div>
-								</div>
-								<div className="col-8">
-									<h1 className=""> {data.heading}</h1>
-									<p className="">
-										{data.info}
-									</p>
+									<div className="col-8">
+										<h1 className=""> {data.heading}</h1>
+										<p className="">
+											{data.info}
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					)
 				})}
-		</div>
+			</div>
 		</>
 	);
 };
