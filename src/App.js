@@ -23,9 +23,9 @@ function App() {
       <Customer2 /> */}
       {/* <ScrollAnimation/>
       <FeatureDisplay/>*/}
-    <FeaturePage />
+    {/* <FeaturePage />
     <LandingPage />
-    <CardPage />
+    <CardPage /> */}
     <LandingPageBootstrap/>
     
     </>

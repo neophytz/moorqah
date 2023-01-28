@@ -1,5 +1,6 @@
 import React from "react";
 import "../CardPage/CardPage.css";
+import '../LandingPage/LandingPageBootstrap.css'
 import hand from "../../assets/LandingPage/palm.svg";
 import background from "../../assets/LandingPage/Background.jpg";
 import ring from "../../assets/LandingPage/ring.png";
@@ -53,12 +54,34 @@ const LandingPageBootstrap = () => {
 							</div>
 						</div>
 					</div>
-					<div className="col-lg-6 col-sm-12 d-flex justify-content-center align-items-center">
-						<img
-							src={ring}
-							alt="text"
-							style={{ height: "800px", width: "800px" }}
-						/>
+					<div className="row-lg-6 row-sm-12 d-flex flex-column justify-content-center align-items-center h-100px" style={{ background:`url(${ring})`, height: "750px", width: "750px", backgroundSize:'cover'}}>
+						{/* <img src={ring} alt="text" style={{ height: "800px", width: "800px" }} /> */}
+						<div>
+							<div className="rounded-5" style={{
+								backgroundImage: `url(${person})`,
+								width: '300px',
+								height: '375px',
+								backgroundPosition:'center',
+								backgroundSize:'cover',
+								transform:'translateY(-190px)'
+							}}>
+								<div className="d-flex flex-column justify-content-center align-items-center box">
+									<strong className="display-6 text-light">John Doe</strong>
+									<p className="text-light font-weight-500">English Teacher</p>
+								</div>
+							</div>
+						</div>
+						<div className="" style={{zIndex:'2'}}>
+							<button className="video-btn">
+								<img src={video} alt="video" className="icn" />
+							</button>
+							<button className="add-btn">
+								<img src={add} alt="video" className="icn" />
+							</button>
+							<button className="mail-btn">
+								<img src={mail} alt="video" className="icn" />
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
