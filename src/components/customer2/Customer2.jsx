@@ -17,8 +17,8 @@ const Customer2 = () => {
                         Read the story
                     </div>
                 </div>
-                <div className='col-md-6 col-sm-12'>
-                    <img src={canvas} alt="" />
+                <div className='image-fluid col-md-6 col-sm-12'>
+                    <img  src={canvas} alt="" />
                 </div>
             </div>
         </div>
