@@ -50,8 +50,8 @@ const bottomCardsData = [
 const CardPage = () => {
 	return (
 		<>
-			<div className="container my-5 px-0">
-				<div className="row">
+			<div className="container my-3">
+				<div className="row mx-2">
 					<div className="col-md-7 d-flex order-md-1 order-2">
 						<div className="row">
 							{
@@ -81,10 +81,10 @@ const CardPage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="row p-4">
+			<div className="row py-4">
 				{bottomCardsData.map((data, idx) => {
 					return (
-						<div className="col-sm-12 col-md-4 p-2" key={idx}>
+						<div className="col-sm-8 col-md-4 px-5" key={idx}>
 							<div className="rounded shadow p-4 text-dark" style={{ backgroundColor: data.backgroundColor }}>
 								<div className="row p-4 text-light">
 									<div className="col-4 d-flex justify-content-center align-items-center">

@@ -51,15 +51,15 @@ const FeaturePage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="container">
+			<div className="container-fluid mx-5 ">
 				<div
 					className="row d-flex justify-content-around"
 					style={{ transform: "translateY(-50px)" }}
 				>
 					{cardsData.map((data, idx) => {
 						return (
-							<div className="col-sm-6 col-md-3 p-2 subcard" key={idx}>
-								<div className="bg-white shadow h-100 rounded p-4">
+							<div className=" col-sm-6 col-md-3 p-2 subcard" key={idx}>
+								<div className="d-flex flex-column justify-content-center align-items-center bg-white shadow h-100 rounded p-4">
 									<img className="icon-svg" src={data.image} alt="" />
 									<h2>{data.heading}</h2>
 									<h5>{data.subText}</h5>
