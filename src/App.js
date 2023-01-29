@@ -8,8 +8,8 @@ import React from "react";
 // import Carousel from "./components/carousals/Carousel"
 // import Customer from "./components/customer/Customer";
 // import Customer2 from "./components/customer2/Customer2";
-// import ScrollAnimation from './components/ScrollAnimation/ScrollAnimation';
-// import FeatureDisplay from './components/FeatureDisplay/FeatureDisplay';
+import ScrollAnimation from './components/ScrollAnimation/ScrollAnimation';
+import FeatureDisplay from './components/FeatureDisplay/FeatureDisplay';
 import LandingPage from './components/LandingPage/LandingPage';
 import LandingPageBootstrap from "./components/LandingPage/LandingPageBootstrap";
 import CardPage from './components/CardPage/CardPage';
@@ -27,11 +27,11 @@ function App() {
       {/* <Carousel />/ */}
       {/* <Customer2 />
       <Customer /> */}
-      {/* <ScrollAnimation/>
-      <FeatureDisplay/>*/}
-    {/* <FeaturePage />
+      <ScrollAnimation/>
+      <FeatureDisplay/>
+    <FeaturePage />
     <LandingPage />
-    <CardPage /> */}
+    <CardPage />
     <LandingPageBootstrap/>
     
     </>
