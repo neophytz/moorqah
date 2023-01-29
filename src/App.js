@@ -29,10 +29,10 @@ function App() {
       <Customer /> */}
       <ScrollAnimation/>
       <FeatureDisplay/>
-    <FeaturePage />
-    <LandingPage />
-    <CardPage />
-    <LandingPageBootstrap/>
+      <FeaturePage />
+      {/* <LandingPage /> */}
+      <CardPage />
+      <LandingPageBootstrap/>
     
     </>
   );
