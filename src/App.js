@@ -4,7 +4,7 @@ import "./app.css";
 // import FeatureDisplay from './components/FeatureDisplay/FeatureDisplay';
 // import FeaturePage from './components/FeaturePage/FeaturePage';
 // import CardPage from './components/CardPage/CardPage';
-// import LandingPageBootstrap from "./components/LandingPage/LandingPageBootstrap";
+import LandingPageBootstrap from "./components/LandingPage/LandingPageBootstrap";
 
 // import Preload3 from "./components/preload3/Preload3";
 // import Preload2 from "./components/preload2/Preload2";
@@ -14,7 +14,7 @@ import "./app.css";
 // import Customer from "./components/customer/Customer";
 // import Customer2 from "./components/customer2/Customer2";
 
-// import ScrollAnimation from './components/ScrollAnimation/ScrollAnimation';
+import ScrollAnimation from './components/ScrollAnimation/ScrollAnimation';
 
 function App() {
   return (
@@ -23,7 +23,6 @@ function App() {
       {/* <FeatureDisplay/> */}
       {/* <FeaturePage /> */}
       {/* <CardPage /> */}
-      {/* <LandingPageBootstrap/> */}
 
       {/* <Preload3 /> */}
       {/* <Preload /> */}
@@ -33,7 +32,8 @@ function App() {
       {/* <Customer2 /> */}
       {/* <Customer /> */}
 
-      {/* <ScrollAnimation/> */}
+      <ScrollAnimation/>
+      <LandingPageBootstrap/>
     
     </>
   );
