@@ -14,3 +14,15 @@
 .icn{
     height: 60px;
 }
+
+.button-grp{
+	background: linear-gradient(to bottom, #ff3695, #ff60ac)
+}
+
+.pfp{
+	height:170px;
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center;
+	border-radius:25px;
+}
