@@ -1,10 +1,10 @@
 import React from "react";
 import "./app.css";
-import Hero from "./components/Hero";
-import FeatureDisplay from './components/FeatureDisplay/FeatureDisplay';
-import FeaturePage from './components/FeaturePage/FeaturePage';
-import CardPage from './components/CardPage/CardPage';
-import LandingPageBootstrap from "./components/LandingPage/LandingPageBootstrap";
+// import Hero from "./components/Hero";
+// import FeatureDisplay from './components/FeatureDisplay/FeatureDisplay';
+// import FeaturePage from './components/FeaturePage/FeaturePage';
+// import CardPage from './components/CardPage/CardPage';
+// import LandingPageBootstrap from "./components/LandingPage/LandingPageBootstrap";
 
 // import Preload3 from "./components/preload3/Preload3";
 // import Preload2 from "./components/preload2/Preload2";
@@ -19,11 +19,11 @@ import LandingPageBootstrap from "./components/LandingPage/LandingPageBootstrap"
 function App() {
   return (
     <>
-      <Hero/>
-      <FeatureDisplay/>
-      <FeaturePage />
-      <CardPage />
-      <LandingPageBootstrap/>
+      {/* <Hero/> */}
+      {/* <FeatureDisplay/> */}
+      {/* <FeaturePage /> */}
+      {/* <CardPage /> */}
+      {/* <LandingPageBootstrap/> */}
 
       {/* <Preload3 /> */}
       {/* <Preload /> */}
