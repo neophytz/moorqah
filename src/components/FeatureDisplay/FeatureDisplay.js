@@ -52,7 +52,7 @@ const FeatureDisplay = () => {
 					<div className="col">
 						{professions.map((profession, idx) => (
 							<div key={idx} onClick={() => setMyProfession(profession.title)}>
-								<div className={`p-4 ${myProfession === profession.title && "card shadow"}`}>
+								<div className={`p-4 ${myProfession === profession.title && "card shadow border-0"}`}>
 									<div className="d-flex mt-2 align-items-start">
 										<img className={`rounded p-1 ${myProfession === profession.title ? 'bg-primary' : "bg-dark"}`} src={profession.icon} alt="cart-icon" height='30px' />
 										<div className="mx-2">
@@ -85,6 +85,7 @@ const ProfessionImage = ({ src }) => {
 	return (
 		<animated.img
 			src={src}
+			loading="lazy"
 			alt=""
 			style={{ width: "560px", height: "560px", ...props }}
 		/>
