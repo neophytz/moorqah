@@ -27,6 +27,8 @@ function App() {
       <ScrollAnimation/>
       <ScrollCard />
       <CardPage />
+      <CardPage />
+      <CardPage />
 
       {/* <Preload3 /> */}
       {/* <Preload /> */}
