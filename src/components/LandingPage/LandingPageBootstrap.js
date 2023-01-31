@@ -73,13 +73,13 @@ const LandingPageBootstrap = () => {
 							transform:"translateY(-60px)",
 							width:"350px"
 							}}>
-							<button className="video-btn">
+							<button className="rounded-5 border-0 p-2">
 								<img src={video} alt="video" className="icn" />
 							</button>
-							<button className="add-btn">
+							<button className="rounded-5 border-0 p-2">
 								<img src={add} alt="video" className="icn" />
 							</button>
-							<button className="mail-btn">
+							<button className="rounded-5 border-0 p-2">
 								<img src={mail} alt="video" className="icn" />
 							</button>
 						</div>
