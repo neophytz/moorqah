@@ -3,8 +3,9 @@ import React from "react";
 // import Hero from "./components/Hero";
 // import FeatureDisplay from './components/FeatureDisplay/FeatureDisplay';
 // import FeaturePage from './components/FeaturePage/FeaturePage';
-// import CardPage from './components/CardPage/CardPage';
-import LandingPageBootstrap from "./components/LandingPage/LandingPageBootstrap";
+import CardPage from './components/CardPage/CardPage';
+// import LandingPageBootstrap from "./components/LandingPage/LandingPageBootstrap";
+import ScrollCard from './components/ScrollCard/ScrollCard'
 
 // import Preload3 from "./components/preload3/Preload3";
 // import Preload2 from "./components/preload2/Preload2";
@@ -22,8 +23,10 @@ function App() {
       {/* <Hero/>
       <FeatureDisplay/>
       <FeaturePage />
-      <CardPage />
       <LandingPageBootstrap/> */}
+      <ScrollAnimation/>
+      <ScrollCard />
+      <CardPage />
 
       {/* <Preload3 /> */}
       {/* <Preload /> */}
@@ -33,8 +36,6 @@ function App() {
       {/* <Carousel /> */}
       {/* <Customer /> */}
 
-      <ScrollAnimation/>
-      <LandingPageBootstrap/>
     
     </>
   );

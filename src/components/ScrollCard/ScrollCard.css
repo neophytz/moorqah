@@ -1,0 +1,7 @@
+.sticky-card{
+    background-color: #0b182b;
+    top:5%;
+    position: sticky;
+    position: -webkit-sticky;
+    border: solid rgba(255, 255, 255, 0.253) 1px;
+}
