@@ -34,46 +34,46 @@ const Customer = () => {
 
                                 </div>   </div>
                             <div className='col-md-6 col-sm-12 '>
-                           
+
                                 <div className="card-innerr b ">
                                     <img className="imagee" src="https://moodle.com/wp-content/uploads/2022/03/our-community-2.svg" alt="Moodle Community Image" width="980" height="980" />
-                                
-                                <div className="card-content">
-                                    <div className="card-copy">
-                                        <h3>MoodleNet</h3>
-                                        <div>Our global network to share and curate open educational resources.</div>
-                                    </div></div>
+
+                                    <div className="card-content">
+                                        <div className="card-copy">
+                                            <h3>MoodleNet</h3>
+                                            <div>Our global network to share and curate open educational resources.</div>
+                                        </div></div>
                                 </div> </div>
-                                <div className='col-md-6 col-sm-12 '>
-                           
-                           <div className="card-innerr c">
-                               <img className="imagee" src="https://moodle.com/wp-content/uploads/2022/03/our-community-3.svg" alt="Moodle Community Image" width="980" height="980" />
-                           
-                           <div className="card-content">
-                               <div className="card-copy">
-                                   <h3>Moodle Academy</h3>
-                                   <div >Join our learning hub for the global Moodle community.</div>
-                               </div></div>
-                           </div> </div>
-                           <div className='col-md-6 col-sm-12 '>
-                           
-                           <div className="card-innerr d">
-                               <img className="imagee" src="https://moodle.com/wp-content/uploads/2022/03/our-community-4.svg" alt="Moodle Community Image" width="980" height="980" />
-                           
-                           <div className="card-content">
-                               <div className="card-copy">
-                                   <h3>Moodle Plugins</h3>
-                                   <div >Find Moodle-endorsed open source plugins for Moodle LMS and Moodle Workplace.</div>
-                               </div></div>
-                           </div> </div>
-                  
+                            <div className='col-md-6 col-sm-12 '>
+
+                                <div className="card-innerr c">
+                                    <img className="imagee" src="https://moodle.com/wp-content/uploads/2022/03/our-community-3.svg" alt="Moodle Community Image" width="980" height="980" />
+
+                                    <div className="card-content">
+                                        <div className="card-copy">
+                                            <h3>Moodle Academy</h3>
+                                            <div >Join our learning hub for the global Moodle community.</div>
+                                        </div></div>
+                                </div> </div>
+                            <div className='col-md-6 col-sm-12 '>
+
+                                <div className="card-innerr d">
+                                    <img className="imagee" src="https://moodle.com/wp-content/uploads/2022/03/our-community-4.svg" alt="Moodle Community Image" width="980" height="980" />
+
+                                    <div className="card-content">
+                                        <div className="card-copy">
+                                            <h3>Moodle Plugins</h3>
+                                            <div >Find Moodle-endorsed open source plugins for Moodle LMS and Moodle Workplace.</div>
+                                        </div></div>
+                                </div> </div>
+
 
 
                         </div>
                     </div>
                 </div>
             </div>
-          
+
 
 
 
