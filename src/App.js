@@ -1,4 +1,5 @@
 import React from "react";
+import Career from "./components/career/Career";
 // import "./app.css";
 // import Hero from "./components/Hero";
 // import FeatureDisplay from './components/FeatureDisplay/FeatureDisplay';
@@ -7,6 +8,7 @@ import CardPage from './components/CardPage/CardPage';
 // import LandingPageBootstrap from "./components/LandingPage/LandingPageBootstrap";
 import ScrollCard from './components/ScrollCard/ScrollCard'
 
+// import Career from "./components/career/Career"
 // import Preload3 from "./components/preload3/Preload3";
 // import Preload2 from "./components/preload2/Preload2";
 // import Preload from "./components/Preload/Preload";
@@ -16,6 +18,7 @@ import ScrollCard from './components/ScrollCard/ScrollCard'
 // import Customer2 from "./components/customer2/Customer2";
 
 import ScrollAnimation from './components/ScrollAnimation/ScrollAnimation';
+import CertificateVerification from "./components/CertificateVerification/CertificateVerfication";
 
 function App() {
   return (
@@ -27,8 +30,7 @@ function App() {
       <ScrollAnimation/>
       <ScrollCard />
       <CardPage />
-      <CardPage />
-      <CardPage />
+      <CertificateVerification />
 
       {/* <Preload3 /> */}
       {/* <Preload /> */}
