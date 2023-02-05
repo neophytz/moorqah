@@ -1,5 +1,5 @@
 import React from "react";
-import Career from "./components/career/Career";
+// import Career from "./components/career/Career";
 // import "./app.css";
 // import Hero from "./components/Hero";
 // import FeatureDisplay from './components/FeatureDisplay/FeatureDisplay';
@@ -31,6 +31,8 @@ function App() {
       <ScrollCard />
       <CardPage />
       <CertificateVerification />
+      <CardPage />
+
 
       {/* <Preload3 /> */}
       {/* <Preload /> */}
