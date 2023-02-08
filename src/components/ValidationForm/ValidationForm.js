@@ -1,10 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from 'react'
 import pageBG from "../../assets/CertificationVerification/CardBG.jpg";
 import question from "../../assets/CertificationVerification/question-mark.svg";
 
-const CertificateVerfication = () => {
-	return (
-		<div className="container-fluid p-0 vh-100">
+const ValidationForm = () => {
+  const initialValues = {UIN: ""};
+  const [inputValues, setInputValues] = useState(initialValues);
+  const [inputErrors, setInputErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  const handleChange = (e) => {
+    const { UIN, value} = e.target;
+    setInputValues({...inputValues, UIN: value});
+    console.log(inputValues);
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setInputErrors(validate(inputValues));
+    setIsSubmit(true);
+  }
+
+  useEffect(() => {
+    console.log(inputErrors)
+    if(Object.keys(inputErrors).length === 0 && isSubmit){
+      console.log(inputValues);
+    }
+  },[inputErrors])
+
+  const validate = (values) => {
+    const errors = {}
+    if(!values.UIN){
+      errors.UIN = "UIN is required";
+    }
+    return errors;
+  }
+
+  return (
+    <div className="container-fluid p-0 vh-100">
 			<div className="d-flex flex-row justify-content-around align-items-center">
 				<div className="col-10">
 					<img
@@ -17,7 +48,9 @@ const CertificateVerfication = () => {
 						}}
 					/>
 				</div>
-				<div
+        <pre>{JSON.stringify(inputValues, undefined ,2)}</pre>
+				<form
+        onSubmit={handleSubmit}
 					className="col-5 d-flex flex-column justify-content-center align-items-center rounded-4 bg-light p-5 "
 					style={{
 						opacity: "95%",
@@ -37,13 +70,15 @@ const CertificateVerfication = () => {
 					</div>
 					<div className="d-flex flex-column align-items-center">
 						<h3 className="display-6" style={{ fontWeight: "500" }}>
-							{" "}
-							Certificate UIN Number:{" "}
+							Certificate UIN Number:
 						</h3>
 						<input
 							className="col-7 my-2 bg-dark text-light p-2 rounded-3"
 							type="number"
-						></input>
+              name="UIN Number"
+              value={inputValues.UIN}
+              onChange={handleChange}
+              />
 						<div className="d-flex flex-row justify-content-between align-items-center">
 							<button className="col-10 btn btn-primary rounded-3 my-2 p-2">
 								Submit
@@ -59,10 +94,10 @@ const CertificateVerfication = () => {
 						</div>
 					</div>
         </div>
-				</div>
+				</form>
 			</div>
 		</div>
-	);
-};
+  )
+}
 
-export default CertificateVerfication;
+export default ValidationForm
