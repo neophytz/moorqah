@@ -17,6 +17,21 @@ const ValidationForm = () => {
     e.preventDefault();
     setInputErrors(validate(inputValues));
     setIsSubmit(true);
+    fetch("https://your-api-endpoint.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(inputValues),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setInputValues({ name: "", email: "" });
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }
 
   useEffect(() => {
