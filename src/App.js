@@ -4,10 +4,10 @@ import React from "react";
 // import Hero from "./components/Hero";
 // import FeatureDisplay from './components/FeatureDisplay/FeatureDisplay';
 // import FeaturePage from './components/FeaturePage/FeaturePage';
-import CardPage from './components/CardPage/CardPage';
+// import CardPage from './components/CardPage/CardPage';
 // import LandingPageBootstrap from "./components/LandingPage/LandingPageBootstrap";
-import ScrollCard from './components/ScrollCard/ScrollCard'
-import ValidationForm from "./components/ValidationForm/ValidationForm";
+// import ScrollCard from './components/ScrollCard/ScrollCard'
+// import ValidationForm from "./components/ValidationForm/ValidationForm";
 
 // import Career from "./components/career/Career"
 // import Preload3 from "./components/preload3/Preload3";
@@ -18,8 +18,8 @@ import ValidationForm from "./components/ValidationForm/ValidationForm";
 // import Customer from "./components/customer/Customer";
 // import Customer2 from "./components/customer2/Customer2";
 
-// import ScrollAnimation from './components/ScrollAnimation/ScrollAnimation';
-// import CertificateVerification from "./components/CertificateVerification/CertificateVerfication";
+import ScrollAnimation from './components/ScrollAnimation/ScrollAnimation';
+import CertificateVerification from "./components/CertificateVerification/CertificateVerfication";
 
 function App() {
   return (
@@ -28,12 +28,12 @@ function App() {
       <FeatureDisplay/>
       <FeaturePage />
       <LandingPageBootstrap/> */}
-      {/* <ScrollAnimation/> */}
-      {/* <ScrollCard />0 */}
+      <ScrollAnimation/>
+      {/* <ScrollCard /> */}
       {/* <CardPage /> */}
-      {/* <CertificateVerification /> */}
+      <CertificateVerification />
       {/* <CardPage /> */}
-      <ValidationForm />
+      {/* <ValidationForm /> */}
 
       {/* <Preload3 /> */}
       {/* <Preload /> */}
